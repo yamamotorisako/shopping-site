@@ -30,15 +30,14 @@
             <div class="row">
               <div class="six columns logo">
         
-                <h1><a href="index.html"><img class="u-max-full-width" src="images/top/logo.png" alt="" srcset="images/top/logo@2x.png 2x" /></a></h1>
-        
+                <a href="index.html"><img class="u-max-full-width" src="images/top/logo.png" alt="" srcset="images/top/logo@2x.png 2x" /></a>
+                
               </div>
               <div class="six columns navi">
         
-                <div class="sp_navi">
+                <img id="menu" src="images/top_sp/menu_icon.png" alt="sp_navi" srcset="images/top_sp/menu_icon@2x.png/>
                   
-                  <img id="menu" src="images/top_sp/menu_icon.png" alt="sp_navi" srcset="images/top_sp/menu_icon@2x.png/>
-        
+                <div class="sp_navi">
                   <ul class="sp_navi_li">
                     <li><a href="#">LOGIN</a></li>
                     <li><a href="#">CART</a></li>
@@ -61,9 +60,12 @@
                 <!-- pc_navi -->
         
               </div>
+              <!--six columns navi-->
+            </div>
+            <!---six columns logo->
             </div>
             <!-- row -->
-          </div>
+          
           <!-- header_in -->
         </header>
         
@@ -83,12 +85,12 @@
           $(function(){
             $(document).ready(function(){
               $("#menu").click(function () {
-                $(this).next().slideToggle();
+                $(".sp_navi_li").slideToggle();
               });
             });
           });
         </script>
        
-        
+
     </body>
 </html>
