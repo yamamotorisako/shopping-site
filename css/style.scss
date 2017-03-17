@@ -27,22 +27,35 @@ header{
     
   //スマホ
     @media (max-width: 550px) {
+      #header_in{
+        text-align: center;
+      }
+      
+      .u-max-full-width{
+        display: block;
+      }
   
       .logo{
         width: 190px;
       }
   
       .navi{
-        width: 40px;
-        float: right;
+        width: auto;
       }
       
       .pc_navi{
         display: none;
       }
       
-      #menu {
+      .sp_icon{
+      }
+      
+      #menuicon{
+      }
+      
+      .menu {
         cursor: pointer;
+        margin: auto 10px;
       }
   
   
@@ -78,10 +91,13 @@ header{
   //デスクトップ
     @media (min-width: 550px) {
       
-      #menu{
+      #menuicon{
         display: none;
       }
       
+      .sp_icon{
+        display: none;
+      }
       
       .sp_navi_li{
         display: none;

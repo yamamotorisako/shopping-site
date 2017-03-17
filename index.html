@@ -28,15 +28,18 @@
           <div id="header_in" class="container">
             <div class="row">
               <div class="six columns logo">
-                
               <a href="index.html">
                 <img class="u-max-full-width" src="images/top/logo.png" alt="ロゴ" srcset="images/top/logo@2x.png 2x" />
               </a>
-                
               </div>
+              
               <div class="six columns navi">
-        
-                <img id="menu" src="images/top_sp/menu_icon.png" alt="sp_navi" srcset="images/top_sp/menu_icon@2x.png/>
+                
+                <div class="sp_icon">
+                  <img class="menu" src="images/top_sp/fb.png" alt="facebook" srcset="images/top_sp/fb@2x.png"/>
+                  <img class="menu" src="images/top_sp/insta.png" alt="instagram" srcset="images/top_sp/insta@2x.png"/>
+                  <img id="menuicon" class="menu" src="images/top_sp/menu_icon.png" alt="sp_navi" srcset="images/top_sp/menu_icon@2x.png"/>
+                </div>
                   
                 <div class="sp_navi">
                   <ul class="sp_navi_li">
@@ -83,7 +86,7 @@
         <script>
           $(function(){
             $(document).ready(function(){
-              $("#menu").click(function () {
+              $("#menuicon").click(function () {
                 $(".sp_navi_li").slideToggle();
               });
             });

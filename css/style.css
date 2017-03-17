@@ -8,15 +8,19 @@ header {
     padding-top: 10px;
     padding-bottom: 4px; }
   @media (max-width: 550px) {
+    header #header_in {
+      text-align: center; }
+    header .u-max-full-width {
+      display: block; }
     header .logo {
       width: 190px; }
     header .navi {
-      width: 40px;
-      float: right; }
+      width: auto; }
     header .pc_navi {
       display: none; }
-    header #menu {
-      cursor: pointer; }
+    header .menu {
+      cursor: pointer;
+      margin: auto 10px; }
     header .sp_navi_li {
       width: 200px;
       position: absolute;
@@ -39,7 +43,9 @@ header {
           font-size: 14px;
           text-decoration: none; } }
   @media (min-width: 550px) {
-    header #menu {
+    header #menuicon {
+      display: none; }
+    header .sp_icon {
       display: none; }
     header .sp_navi_li {
       display: none; }
